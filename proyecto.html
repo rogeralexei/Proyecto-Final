@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tesla</title>
+        <link rel="stylesheet" href="final.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b271900939.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <!-- Antes de comenzar, me gustaria decir que la razon por la que use float y position absolute fue por que eso fue lo que vimos en la clase, hay otras maneras  de hacerlo con menos codigo y otras herramientas. Pero me reserve a solo usar fonts . Peace -->
+        <!-- Nav Bar -->
+        <nav>
+                <img id="imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/793px-Tesla_Motors.svg.png" alt="Logo" srcset="">
+                <ul>
+                    <a id="ventajas" href="#vent">Ventajas</a>
+                    <a id="elon" href="#musk">Elon Musk</a>
+                    <a id="catch" href="#contacto">Contacto</a>
+                    <li id="sign">Sign In</li>
+                    <button id="log">Log In</button>
+                </ul>
+            </nav>
+
+            <!-- Modelos -->
+            <div>
+                <div id="circle">
+                </div>
+                <p id="modelo">Tesla S</p>
+                <p id="slog">Veloz, aerodinámico y potente</p>
+                <img id="carro" src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2ccb.png" alt="">
+                <i class="fas fa-angle-double-right arrowright"></i>
+                <i class="fas fa-angle-double-left arrowleft"></i>
+            </div>
+
+            <!-- Ventajas -->
+            <div >
+                <h1 id="vent">Ventajas</h1>
+                <div id="S">
+                    <h1 style="text-align:center;">Tesla S</h1>
+                    <ul>
+                        <li>En el interior, el Tesla Model S opta por el minimalismo propio de las últimas tendencias, con el mínimo número de botones e interruptores posibles. Esto es posible gracias a la centralización de funciones a través de una gigantesca pantalla táctil de nada más y nada menos que 17 pulgadas.</li><br>
+                        <li>El diseño de la carrocería del Tesla Model S se ha mantenido prácticamente intacto desde su lanzamiento allá por 2013, cuando apenas se vendía en un puñado de regiones.</li><br>
+                        <li>El Tesla Model S cuenta con Autopilot 2.0</li>
+                    </ul>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/xttCe0f3aCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="text-align: center;" allowfullscreen></iframe>
+                </div>
+                <div id="m3">
+                    <h1 style="text-align:center;">Tesla X</h1>
+                    <ul>
+                        <li>El Tesla Model X goza de una mecánica parecida a la del Tesla Model S, incluyendo un sistema de tracción a las cuatro ruedas que se basa en dos motores eléctricos, uno por cada eje.</li><br>
+                        <li>El Tesla Model X incluye la versión 2.0 del sistema Autopilot gracias a ocho cámaras envolventes, doce sensores de ultrasonidos y un radar delantero para ver incluso por delante del vehículo precedente.</li><br>
+                        <li>El interior del Tesla Model X está disponible en tres configuraciones personalizadas de pasajeros, con posibilidad de elegir 5, 6 o 7 asientos. </li>
+                    </ul>
+                    <br>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/056UfDwh4rM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="#imagen"><i class="fas fa-arrow-up arrowup"></i></a>
+            </div>
+
+            <!-- Musk -->
+            <div>
+                <h1 id="musk">Elon Musk</h1>
+                <div id="aura">
+                </div>
+                <img id="mr" src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43be2b.png" alt="Elon">
+                <p id="p1">Famoso multimillonario nacido en Sudáfrica, fundador de Paypal, creador de Boring Company, una empresa que prevé conquistar el subsuelo y de SpaceX, una compañía que busca conquistar el cosmos.</p>
+                <p id="p2">En los 13 años transcurridos desde que Musk vendió la empresa de pagos en línea Paypal por US$ 1.5 mil millones, se ha convertido para muchos en un genio, para otros en un loco y para otros tantos en un visionario, un iluminado, un playboy o en un superhéroe.</p>
+                <p id="p3">Dueño de:</p>
+                <img id="space" src="https://www.stickpng.com/assets/images/5842a770a6515b1e0ad75afe.png" alt="SpaceX">
+                <img id="solar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/SolarCity_wordmark.svg/1280px-SolarCity_wordmark.svg.png" alt="Solar">
+                <img id="boring" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_Boring_Company_Logo.svg/1280px-The_Boring_Company_Logo.svg.png" alt="TheBoring">
+                <a href="#imagen"><i class="fas fa-arrow-up arrowup2"></i></a>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h1 id="contacto">Contacto</h1>
+                <img id="email" src="email.svg" alt="email">
+                <h2 id="ayuda">¿Necesitas Ayuda?</h2>
+                <p id="nunca">Problabemente nunca te contestemos, pero puedes intentarlo</p>
+                <form id="ficha">
+                    <input type="text" name="nombre" id="name" placeholder="nombre" required><br>
+                    <input type="text" name="apellido" id="lastname" placeholder="apellido" required><br>
+                    <input type="email" placeholder="email"><br>
+                    <div class="button_cont" align="center"><input type="submit" class="example_a" rel="nofollow noopener"></div>
+                    <!-- <input id="enviar" type="submit" value="Dale"> -->
+                </form>
+                <a href="#imagen"><i class="fas fa-arrow-up arrowup3"></i></a>
+            </div>
+            <script src="proFin.js"></script>
+    </body>
+</html>
